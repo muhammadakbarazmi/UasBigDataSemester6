@@ -1,0 +1,28 @@
+TUGAS KUIS 2
+
+1. Data Sekolah SD DKI JAKARTA 2015
+~~Menampilkan Nama sekolah berdasarkan akreditasi~~
+SELECT nama_sekolah, alamat, akreditasi
+FROM `kuis2-351714.kuis2_bigdata.data_sekolah_sd_tahun_2015_dki_jakarta` 
+WHERE akreditasi = "A" order by nama_sekolah LIMIT 1000
+
+~~Menampilkan Nama sekolah berdasarkan Kecamatan~~
+SELECT nama_sekolah, alamat, kecamatan 
+FROM `kuis2-351714.kuis2_bigdata.data_sekolah_sd_tahun_2015_dki_jakarta` 
+WHERE kecamatan = "Gambir" order by nama_sekolah LIMIT 1000
+
+~~Menampilkan Kondisi lingkungan berdasarkan nama sekolah~~
+SELECT nama_sekolah, alamat, kecamatan, kondisi_lingkungan
+FROM `kuis2-351714.kuis2_bigdata.data_sekolah_sd_tahun_2015_dki_jakarta` 
+WHERE kondisi_lingkungan = "Padat/Kumuh" order by nama_sekolah LIMIT 1000
+
+
+
+SELECT  
+  *
+FROM `muhammad-akbar-azmi-ti-3e.google_analytics_sample.ga_sessions_20170801` 
+WHERE 
+  _TABLE_SUFFIX BETWEEN '20170701'
+AND '20170731'
+
+
